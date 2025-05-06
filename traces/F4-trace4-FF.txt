@@ -1,0 +1,68 @@
+=== Graphe 4 - Ford-Fulkerson ===
+
+Iteration 1:
+Chemin augmentant trouve : s -> c -> e -> t
+Flot ajoute sur ce chemin : 5
+
+Matrice residuelle apres iteration 1
+
+     s  a  b  c  d  e  f  t
+s    0  5  0  4  0  0  0  0
+a    0  0  7  0  0  0  0  0
+b    0  0  0  0  4  3  0  0
+c    5  0  4  0  0  1  5  0
+d    0  0  0  0  0  6  0  6
+e    0  0  0  5  0  0  0  0
+f    0  0  0  0  0  0  0  7
+t    0  0  0  0  0  5  0  0
+
+Iteration 2:
+Chemin augmentant trouve : s -> c -> f -> t
+Flot ajoute sur ce chemin : 4
+
+Matrice residuelle apres iteration 2
+
+     s  a  b  c  d  e  f  t
+s    0  5  0  0  0  0  0  0
+a    0  0  7  0  0  0  0  0
+b    0  0  0  0  4  3  0  0
+c    9  0  4  0  0  1  1  0
+d    0  0  0  0  0  6  0  6
+e    0  0  0  5  0  0  0  0
+f    0  0  0  4  0  0  0  3
+t    0  0  0  0  0  5  4  0
+
+Iteration 3:
+Chemin augmentant trouve : s -> a -> b -> d -> t
+Flot ajoute sur ce chemin : 4
+
+Matrice residuelle apres iteration 3
+
+     s  a  b  c  d  e  f  t
+s    0  1  0  0  0  0  0  0
+a    4  0  3  0  0  0  0  0
+b    0  4  0  0  0  3  0  0
+c    9  0  4  0  0  1  1  0
+d    0  0  4  0  0  6  0  2
+e    0  0  0  5  0  0  0  0
+f    0  0  0  4  0  0  0  3
+t    0  0  0  0  4  5  4  0
+
+Iteration 4:
+Chemin augmentant trouve : s -> a -> b -> e -> c -> f -> t
+Flot ajoute sur ce chemin : 1
+
+Matrice residuelle apres iteration 4
+
+     s  a  b  c  d  e  f  t
+s    0  0  0  0  0  0  0  0
+a    5  0  2  0  0  0  0  0
+b    0  5  0  0  0  2  0  0
+c    9  0  4  0  0  2  0  0
+d    0  0  4  0  0  6  0  2
+e    0  0  1  4  0  0  0  0
+f    0  0  0  5  0  0  0  2
+t    0  0  0  0  4  5  5  0
+
+===== Resultat final =====
+Flot maximal total : 14

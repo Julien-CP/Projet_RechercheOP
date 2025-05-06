@@ -1,0 +1,55 @@
+=== Graphe 7 - Flot à Coût Minimal ===
+
+=== Début de Min-Cost Flow ===
+
+Itération 1:
+Chemin de coût minimal trouvé : s -> d -> t
+Flot envoyé sur ce chemin : 1
+Coût de ce chemin : 6
+Flot cumulé envoyé : 1/7
+
+Matrice résiduelle après itération 1
+
+     s  a  b  c  d  t
+s    0  5  0  8  4  0
+a    0  0  1  0  0  7
+b    0  0  0  0  0  1
+c    0  3  0  0  0  9
+d    1  0  0  4  0  0
+t    0  0  0  0  1  0
+
+Itération 2:
+Chemin de coût minimal trouvé : s -> a -> t
+Flot envoyé sur ce chemin : 5
+Coût de ce chemin : 35
+Flot cumulé envoyé : 6/7
+
+Matrice résiduelle après itération 2
+
+     s  a  b  c  d  t
+s    0  0  0  8  4  0
+a    5  0  1  0  0  2
+b    0  0  0  0  0  1
+c    0  3  0  0  0  9
+d    1  0  0  4  0  0
+t    0  5  0  0  1  0
+
+Itération 3:
+Chemin de coût minimal trouvé : s -> c -> t
+Flot envoyé sur ce chemin : 1
+Coût de ce chemin : 8
+Flot cumulé envoyé : 7/7
+
+Matrice résiduelle après itération 3
+
+     s  a  b  c  d  t
+s    0  0  0  7  4  0
+a    5  0  1  0  0  2
+b    0  0  0  0  0  1
+c    1  3  0  0  0  8
+d    1  0  0  4  0  0
+t    0  5  0  1  1  0
+
+===== Résultat final =====
+Flot total demandé atteint : 7
+Coût total minimal : 49

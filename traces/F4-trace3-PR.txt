@@ -1,0 +1,138 @@
+=== Graphe 3 - Push-Relabel ===
+
+=== Debut de Push-Relabel ===
+Hauteurs initiales : [8, 0, 0, 0, 0, 0, 0, 0]
+Excedents initiaux : [-17, 5, 8, 4, 0, 0, 0, 0]
+Relabel sommet 1, nouvelle hauteur 1
+
+etat actuel:
+Hauteurs : [8, 1, 0, 0, 0, 0, 0, 0]
+Excedents : [-17, 5, 8, 4, 0, 0, 0, 0]
+Relabel sommet 2, nouvelle hauteur 1
+
+etat actuel:
+Hauteurs : [8, 1, 1, 0, 0, 0, 0, 0]
+Excedents : [-17, 5, 8, 4, 0, 0, 0, 0]
+Relabel sommet 3, nouvelle hauteur 1
+
+etat actuel:
+Hauteurs : [8, 1, 1, 1, 0, 0, 0, 0]
+Excedents : [-17, 5, 8, 4, 0, 0, 0, 0]
+Push 5 de 1 vers 4
+
+etat actuel:
+Hauteurs : [8, 1, 1, 1, 0, 0, 0, 0]
+Excedents : [-17, 0, 8, 4, 5, 0, 0, 0]
+Push 7 de 2 vers 5
+
+etat actuel:
+Hauteurs : [8, 1, 1, 1, 0, 0, 0, 0]
+Excedents : [-17, 0, 1, 4, 5, 7, 0, 0]
+Push 4 de 3 vers 6
+
+etat actuel:
+Hauteurs : [8, 1, 1, 1, 0, 0, 0, 0]
+Excedents : [-17, 0, 1, 0, 5, 7, 4, 0]
+Relabel sommet 4, nouvelle hauteur 1
+
+etat actuel:
+Hauteurs : [8, 1, 1, 1, 1, 0, 0, 0]
+Excedents : [-17, 0, 1, 0, 5, 7, 4, 0]
+Relabel sommet 5, nouvelle hauteur 1
+
+etat actuel:
+Hauteurs : [8, 1, 1, 1, 1, 1, 0, 0]
+Excedents : [-17, 0, 1, 0, 5, 7, 4, 0]
+Push 1 de 2 vers 6
+
+etat actuel:
+Hauteurs : [8, 1, 1, 1, 1, 1, 0, 0]
+Excedents : [-17, 0, 0, 0, 5, 7, 5, 0]
+Relabel sommet 6, nouvelle hauteur 1
+
+etat actuel:
+Hauteurs : [8, 1, 1, 1, 1, 1, 1, 0]
+Excedents : [-17, 0, 0, 0, 5, 7, 5, 0]
+Relabel sommet 4, nouvelle hauteur 2
+
+etat actuel:
+Hauteurs : [8, 1, 1, 1, 2, 1, 1, 0]
+Excedents : [-17, 0, 0, 0, 5, 7, 5, 0]
+Push 7 de 5 vers 7
+
+etat actuel:
+Hauteurs : [8, 1, 1, 1, 2, 1, 1, 0]
+Excedents : [-17, 0, 0, 0, 5, 0, 5, 7]
+Push 5 de 6 vers 7
+
+etat actuel:
+Hauteurs : [8, 1, 1, 1, 2, 1, 1, 0]
+Excedents : [-17, 0, 0, 0, 5, 0, 0, 12]
+Push 5 de 4 vers 1
+
+etat actuel:
+Hauteurs : [8, 1, 1, 1, 2, 1, 1, 0]
+Excedents : [-17, 5, 0, 0, 0, 0, 0, 12]
+Relabel sommet 1, nouvelle hauteur 2
+
+etat actuel:
+Hauteurs : [8, 2, 1, 1, 2, 1, 1, 0]
+Excedents : [-17, 5, 0, 0, 0, 0, 0, 12]
+Push 4 de 1 vers 2
+
+etat actuel:
+Hauteurs : [8, 2, 1, 1, 2, 1, 1, 0]
+Excedents : [-17, 1, 4, 0, 0, 0, 0, 12]
+Relabel sommet 2, nouvelle hauteur 2
+
+etat actuel:
+Hauteurs : [8, 2, 2, 1, 2, 1, 1, 0]
+Excedents : [-17, 1, 4, 0, 0, 0, 0, 12]
+Relabel sommet 1, nouvelle hauteur 3
+
+etat actuel:
+Hauteurs : [8, 3, 2, 1, 2, 1, 1, 0]
+Excedents : [-17, 1, 4, 0, 0, 0, 0, 12]
+Push 4 de 2 vers 6
+
+etat actuel:
+Hauteurs : [8, 3, 2, 1, 2, 1, 1, 0]
+Excedents : [-17, 1, 0, 0, 0, 0, 4, 12]
+Push 1 de 1 vers 4
+
+etat actuel:
+Hauteurs : [8, 3, 2, 1, 2, 1, 1, 0]
+Excedents : [-17, 0, 0, 0, 1, 0, 4, 12]
+Push 4 de 6 vers 7
+
+etat actuel:
+Hauteurs : [8, 3, 2, 1, 2, 1, 1, 0]
+Excedents : [-17, 0, 0, 0, 1, 0, 0, 16]
+Push 1 de 4 vers 5
+
+etat actuel:
+Hauteurs : [8, 3, 2, 1, 2, 1, 1, 0]
+Excedents : [-17, 0, 0, 0, 0, 1, 0, 16]
+Relabel sommet 5, nouvelle hauteur 3
+
+etat actuel:
+Hauteurs : [8, 3, 2, 1, 2, 3, 1, 0]
+Excedents : [-17, 0, 0, 0, 0, 1, 0, 16]
+Push 1 de 5 vers 2
+
+etat actuel:
+Hauteurs : [8, 3, 2, 1, 2, 3, 1, 0]
+Excedents : [-17, 0, 1, 0, 0, 0, 0, 16]
+Push 1 de 2 vers 6
+
+etat actuel:
+Hauteurs : [8, 3, 2, 1, 2, 3, 1, 0]
+Excedents : [-17, 0, 0, 0, 0, 0, 1, 16]
+Push 1 de 6 vers 7
+
+etat actuel:
+Hauteurs : [8, 3, 2, 1, 2, 3, 1, 0]
+Excedents : [-17, 0, 0, 0, 0, 0, 0, 17]
+
+===== Resultat final =====
+Flot maximal total : 17

@@ -1,0 +1,84 @@
+=== Graphe 3 - Ford-Fulkerson ===
+
+Iteration 1:
+Chemin augmentant trouve : s -> b -> e -> t
+Flot ajoute sur ce chemin : 7
+
+Matrice residuelle apres iteration 1
+
+     s  a  b  c  d  e  f  t
+s    0  5  1  4  0  0  0  0
+a    0  0  4  0  7  0  0  0
+b    7  0  0  0  0  0  8  0
+c    0  0  7  0  0  0  4  0
+d    0  0  0  0  0  6  0  0
+e    0  0  7  0  0  0  0  0
+f    0  0  0  0  0  0  0 10
+t    0  0  0  0  0  7  0  0
+
+Iteration 2:
+Chemin augmentant trouve : s -> b -> f -> t
+Flot ajoute sur ce chemin : 1
+
+Matrice residuelle apres iteration 2
+
+     s  a  b  c  d  e  f  t
+s    0  5  0  4  0  0  0  0
+a    0  0  4  0  7  0  0  0
+b    8  0  0  0  0  0  7  0
+c    0  0  7  0  0  0  4  0
+d    0  0  0  0  0  6  0  0
+e    0  0  7  0  0  0  0  0
+f    0  0  1  0  0  0  0  9
+t    0  0  0  0  0  7  1  0
+
+Iteration 3:
+Chemin augmentant trouve : s -> c -> f -> t
+Flot ajoute sur ce chemin : 4
+
+Matrice residuelle apres iteration 3
+
+     s  a  b  c  d  e  f  t
+s    0  5  0  0  0  0  0  0
+a    0  0  4  0  7  0  0  0
+b    8  0  0  0  0  0  7  0
+c    4  0  7  0  0  0  0  0
+d    0  0  0  0  0  6  0  0
+e    0  0  7  0  0  0  0  0
+f    0  0  1  4  0  0  0  5
+t    0  0  0  0  0  7  5  0
+
+Iteration 4:
+Chemin augmentant trouve : s -> a -> b -> f -> t
+Flot ajoute sur ce chemin : 4
+
+Matrice residuelle apres iteration 4
+
+     s  a  b  c  d  e  f  t
+s    0  1  0  0  0  0  0  0
+a    4  0  0  0  7  0  0  0
+b    8  4  0  0  0  0  3  0
+c    4  0  7  0  0  0  0  0
+d    0  0  0  0  0  6  0  0
+e    0  0  7  0  0  0  0  0
+f    0  0  5  4  0  0  0  1
+t    0  0  0  0  0  7  9  0
+
+Iteration 5:
+Chemin augmentant trouve : s -> a -> d -> e -> b -> f -> t
+Flot ajoute sur ce chemin : 1
+
+Matrice residuelle apres iteration 5
+
+     s  a  b  c  d  e  f  t
+s    0  0  0  0  0  0  0  0
+a    5  0  0  0  6  0  0  0
+b    8  4  0  0  0  1  2  0
+c    4  0  7  0  0  0  0  0
+d    0  1  0  0  0  5  0  0
+e    0  0  6  0  1  0  0  0
+f    0  0  6  4  0  0  0  0
+t    0  0  0  0  0  7 10  0
+
+===== Resultat final =====
+Flot maximal total : 17

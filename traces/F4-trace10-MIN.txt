@@ -1,0 +1,24 @@
+=== Graphe 10 - Flot à Coût Minimal ===
+
+=== Début de Min-Cost Flow ===
+
+Itération 1:
+Chemin de coût minimal trouvé : s -> a -> d -> t
+Flot envoyé sur ce chemin : 10
+Coût de ce chemin : 60
+Flot cumulé envoyé : 10/10
+
+Matrice résiduelle après itération 1
+
+       s   a   b   c   d   e   t
+s      0 140 150   0   0   0   0
+a     10   0   0 120  90   0   0
+b      0   0   0   0 100 120   0
+c      0   0   0   0   0   0 150
+d      0  10   0  50   0   0  70
+e      0   0   0   0  50   0 150
+t      0   0   0   0  10   0   0
+
+===== Résultat final =====
+Flot total demandé atteint : 10
+Coût total minimal : 60

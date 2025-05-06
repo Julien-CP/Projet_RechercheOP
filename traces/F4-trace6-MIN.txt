@@ -1,0 +1,55 @@
+=== Graphe 6 - Flot à Coût Minimal ===
+
+=== Début de Min-Cost Flow ===
+
+Itération 1:
+Chemin de coût minimal trouvé : s -> b -> c -> t
+Flot envoyé sur ce chemin : 2
+Coût de ce chemin : 6
+Flot cumulé envoyé : 2/5
+
+Matrice résiduelle après itération 1
+
+     s  a  b  c  d  t
+s    0  4  0  0  0  0
+a    0  0  0  4  0  1
+b    2  0  0  2  2  0
+c    0  0  2  0  2  0
+d    0  0  0  0  0  2
+t    0  0  0  2  0  0
+
+Itération 2:
+Chemin de coût minimal trouvé : s -> a -> t
+Flot envoyé sur ce chemin : 1
+Coût de ce chemin : 7
+Flot cumulé envoyé : 3/5
+
+Matrice résiduelle après itération 2
+
+     s  a  b  c  d  t
+s    0  3  0  0  0  0
+a    1  0  0  4  0  0
+b    2  0  0  2  2  0
+c    0  0  2  0  2  0
+d    0  0  0  0  0  2
+t    0  1  0  2  0  0
+
+Itération 3:
+Chemin de coût minimal trouvé : s -> a -> c -> d -> t
+Flot envoyé sur ce chemin : 2
+Coût de ce chemin : 28
+Flot cumulé envoyé : 5/5
+
+Matrice résiduelle après itération 3
+
+     s  a  b  c  d  t
+s    0  1  0  0  0  0
+a    3  0  0  2  0  0
+b    2  0  0  2  2  0
+c    0  2  2  0  0  0
+d    0  0  0  2  0  0
+t    0  1  0  2  2  0
+
+===== Résultat final =====
+Flot total demandé atteint : 5
+Coût total minimal : 41
